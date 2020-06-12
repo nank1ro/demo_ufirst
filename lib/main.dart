@@ -72,8 +72,6 @@ class _MyHomePageState extends State<MyHomePage> {
               int value = snapshot.data;
               return RichText(
                 text: TextSpan(
-                  // Note: Styles for TextSpans must be explicitly defined.
-                  // Child text spans will inherit styles from parent
                   style: new TextStyle(
                     fontSize: 17.0,
                     color: Colors.white,

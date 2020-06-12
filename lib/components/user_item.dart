@@ -54,12 +54,20 @@ class UserItem extends StatelessWidget {
             ),
           ],
         ),
-        subtitle: Text(
-          "${user.phoneNumber}",
-          style: TextStyle(
-              fontSize: 12,
-              fontStyle: FontStyle.italic,
-              color: isActive ? Colors.black : Colors.grey),
+        subtitle: Row(
+          children: <Widget>[
+            Icon(
+              Icons.phone_iphone,
+              size: 12,
+            ),
+            Text(
+              "${user.phoneNumber}",
+              style: TextStyle(
+                  fontSize: 12,
+                  fontStyle: FontStyle.italic,
+                  color: isActive ? Colors.black : Colors.grey),
+            ),
+          ],
         ),
         trailing: isActive
             ? Container(
